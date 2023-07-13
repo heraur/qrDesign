@@ -1,6 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
+  display: flex;
   font-family: merriL, serif;
-  max-width: 1440px;
+  min-width: 1440px;
+  width: 100%;
+  background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
 }
 @font-face {
   font-family: "merriL";
@@ -9,4 +19,41 @@ main {
 @font-face {
   font-family: merriB;
   src: url("./font/Merriweather-Bold.ttf");
+}
+main .contain {
+  width: 20%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2% 2%;
+  box-shadow: merriB, serif 0px 10px 20px, merriB, serif 0px 6px 6px;
+  transform: translateX(65%);
+}
+main .contain img {
+  border-radius: 10px;
+}
+main .contain h6 {
+  font-family: merriB, serif;
+  font-size: 0.9rem;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 7%;
+}
+main .contain p {
+  font-family: merriL, serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(220, 15%, 55%);
+  margin-top: 7%;
+  text-align: center;
+}
+main .attribution {
+  color: hsl(220, 15%, 55%);
+}
+main .attribution a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=index.css.map */

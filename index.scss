@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     $color1: hsl(0, 0%, 100%);
     $color2: hsl(212, 45%, 89%);
@@ -16,7 +22,55 @@ main {
 
     $font1: merriL, serif;
     $font2: merriB, serif;
+    display: flex;
 
     font-family:$font1;
-    max-width: 1440px;
+    min-width: 1440px;
+    width: 100%;
+    background-color: $color2;
+    min-height: 100vh;
+
+    .contain {
+        width: 20%;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: $color1;
+        padding: 2% 2%;
+        box-shadow: $font2 0px 10px 20px, $font2 0px 6px 6px;
+        transform: translateX(65%);
+
+        img {
+            border-radius: 10px;
+        }
+
+        h6 {
+            font-family: $font2;
+            font-size: .9rem;
+            color: $color4;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 7%;
+        }
+
+        p {
+            font-family: $font1;
+            font-weight: 400;
+            font-size: .9rem;
+            color: $color3;
+            margin-top: 7%;
+            text-align: center;
+        }
+    }
+
+    .attribution {
+        color: $color3 ;
+
+        a {
+            text-decoration: none;
+            color: $color1;
+        }
+
+    }
 }
