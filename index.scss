@@ -30,10 +30,16 @@ main {
     background-color: $color2;
     min-height: 100vh;
 
+    @media screen and (max-width:375px) {
+        max-width: 374px;
+        width: 100%;
+        min-height: 100vh;
+    }
+
     .contain {
         width: 20%;
         margin: auto;
-        border-radius: 10px;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         background-color: $color1;
@@ -42,7 +48,7 @@ main {
         transform: translateX(65%);
 
         img {
-            border-radius: 10px;
+            border-radius: 20px;
         }
 
         h6 {
@@ -62,6 +68,14 @@ main {
             margin-top: 7%;
             text-align: center;
         }
+
+        @media screen and (max-width:375px) {
+            max-width: 374px;
+            width: 100%;
+            min-height: fit-content;
+            transform: translateX(-65%);
+        }
+
     }
 
     .attribution {

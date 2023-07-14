@@ -20,10 +20,17 @@ main {
   font-family: merriB;
   src: url("./font/Merriweather-Bold.ttf");
 }
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 374px;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
 main .contain {
   width: 20%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
@@ -32,7 +39,7 @@ main .contain {
   transform: translateX(65%);
 }
 main .contain img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 main .contain h6 {
   font-family: merriB, serif;
@@ -49,6 +56,15 @@ main .contain p {
   color: hsl(220, 15%, 55%);
   margin-top: 7%;
   text-align: center;
+}
+@media screen and (max-width: 375px) {
+  main .contain {
+    max-width: 374px;
+    width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    transform: translateX(-65%);
+  }
 }
 main .attribution {
   color: hsl(220, 15%, 55%);
